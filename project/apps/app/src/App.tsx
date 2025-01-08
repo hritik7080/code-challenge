@@ -1,4 +1,5 @@
 import { List } from 'ui'
+import { useEffect, useState } from 'react';
 
 const api = "https://pokeapi.co/api/v2/pokemon?limit=151"
 
@@ -17,7 +18,7 @@ const App = () => {
   return (
   <>
     <h1>Pokemon list:</h1>
-    <List />
+    {pokemon && <List data={pokemon.results} />}
   </>
   )
 }
