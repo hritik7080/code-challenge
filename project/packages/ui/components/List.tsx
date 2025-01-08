@@ -13,7 +13,7 @@ interface ListProps {
 export const List: React.FC<ListProps> = ({data}) => {
   console.log('List props:', data)
   return (
-    <table>
+    <table className='pokemon-table'>
       <thead>
         <tr>
           <th>Name</th>
@@ -24,7 +24,7 @@ export const List: React.FC<ListProps> = ({data}) => {
         {data.map((pokemon, index) => (
           <tr key={index}>
             <td>{pokemon.name}</td>
-            <td>{pokemon.url}</td>
+            <td><a href={pokemon.url} target='_blank'>{pokemon.url}</a></td>
           </tr>
         ))}
       </tbody>

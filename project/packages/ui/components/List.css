@@ -1,0 +1,28 @@
+.pokemon-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    min-width: fit-content;
+  }
+  
+  .pokemon-table thead tr {
+    background-color: teal;
+    color: white;
+    text-align: left;
+  }
+  
+  .pokemon-table th,
+  .pokemon-table td {
+    padding: 12px 15px;
+  }
+  
+  .pokemon-table tbody tr {
+    border-bottom: 1px solid lightgrey;
+  }
+    
+  .pokemon-table tbody tr:hover {
+    background-color: lightgray;
+  }
+  
+  
+  
